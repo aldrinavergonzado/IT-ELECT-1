@@ -1,0 +1,28 @@
+public class Main {
+    public static void main(String[] args) {
+        //all value is in percentage
+        int exam = 90;
+        int totalQuizzes = 80;
+        int attendance = 100;
+        int participation = 100;
+
+        float grade = (exam * 0.40f) + (totalQuizzes * 0.30f) + (attendance * 0.15f) + (participation * 0.15f);
+
+        int passingGrade = 75;
+
+        System.out.println("Your Grade: " + grade);
+        if (grade >= passingGrade){
+            System.out.println("Congats! Pasado ka.");
+        }
+        else {
+            System.out.println("Better Luck Next Time!");
+        }
+    }
+}
+
+/*output will be: 
+
+Your Grade: 90.0
+Congrats!Pasado ka.
+*/
+  
